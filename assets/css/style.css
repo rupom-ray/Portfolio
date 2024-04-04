@@ -1,0 +1,417 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* portfolio css */
+
+/* common css */
+:root {
+    --color-g: #17a2b8;
+    --color-b: #007bff;
+    --color-r: #dc3545;
+    --color-o: #fd7e14;
+    --color-w: #fff;
+    --tcolor: rgb(34, 34, 34);
+    --t2color: rgb(102, 102, 102);
+    --bgcolor: #ffc107;
+}
+
+h2 {
+    padding-top: 50px;
+    position: relative;
+    font-weight: bold;
+}
+
+h2::after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    position: absolute;
+    background: var(--color-o);
+    bottom: -10px;
+    left: 0;
+}
+
+.section-m {
+    margin: 50px 0 0;
+    background: var(--color-w);
+}
+
+.p {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cent {
+    align-items: center;
+}
+
+.style-col {
+    padding: 20px;
+    border-left: 1px solid var(--color-o);
+    border-bottom: 1px solid var(--color-o);
+    position: relative;
+}
+
+.style-col::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--color-o);
+    top: 20%;
+    left: -7.5px;
+
+}
+
+.time {
+    small {
+        font-weight: 600;
+
+        span {
+            color: var(--color-o);
+            font-weight: 600;
+        }
+    }
+
+    margin-bottom: 5px;
+}
+
+.degree {
+    h4 {
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--tcolor);
+    }
+
+    p {
+        color: var(--t2color);
+    }
+}
+
+
+/* header css */
+body {
+    background: var(--bgcolor);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    header {
+        background: var(--tcolor);
+        position: sticky;
+        top: 0;
+
+
+        .side-header {
+
+            .portfoli-img {
+                width: 100%;
+                overflow: hidden;
+                height: 400px;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    display: block;
+                    object-fit: contain;
+                }
+
+            }
+
+            .menu {
+
+                ul {
+                    padding: 30px 0px;
+                    margin: 0;
+
+                    li {
+                        list-style: none;
+                        text-align: left;
+
+
+                        a {
+                            padding: 10px 30px 10px 20px;
+                            background: transparent;
+                            text-decoration: none;
+                            display: block;
+                            color: var(--color-w);
+                            margin: 0;
+                            transition: .4s;
+
+                            i {
+                                float: right;
+                            }
+                        }
+
+                        a:hover {
+                            color: var(--tcolor);
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .side-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 50px;
+
+            .social-icon {
+
+
+
+                a {
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 24px;
+                    color: var(--tcolor);
+                    background: var(--color-o);
+                    transition: .4s;
+                    text-decoration: none;
+                    border-radius: 50%;
+                }
+
+                a:hover {
+                    color: var(--tcolor);
+                    background: var(--color-w);
+                }
+
+            }
+
+        }
+    }
+
+    .home {
+
+        width: 100%;
+        z-index: 0;
+
+        position: relative;
+
+        .home-header {
+            padding: 200px 30px;
+
+            h3 {
+                font-size: 28px;
+                color: var(--color-o);
+            }
+
+            h1 {
+                color: var(--tcolor);
+                font-size: 64px;
+            }
+
+            h4 {
+                font-size: 32px;
+                color: var(--t2color);
+            }
+
+            img {
+                position: absolute;
+                bottom: 70px;
+                right: 0px;
+                width: 350px;
+                z-index: -55;
+            }
+        }
+
+    }
+
+    .cvbtn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+
+        a {
+            width: 50%;
+            background: #ffff;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            transition: .4s;
+        }
+
+        .btn-resume {
+            background: var(--tcolor);
+            color: var(--color-r);
+        }
+
+        .btn-resume:hover {
+            background: var(--t2color);
+            color: var(--color-o);
+        }
+
+        .btn-hire-me {
+            background: var(--color-r);
+            color: var(--tcolor);
+        }
+
+        .btn-hire-me:hover {
+            background: var(--color-o);
+            color: var(--t2color);
+        }
+    }
+
+    .about {
+        background: var(--color-w);
+
+        padding-left: 30px;
+
+        /* .about-header {} */
+
+        .about-img {
+            margin-top: 50px;
+            overflow: hidden;
+            height: 300px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .about-text {
+            padding-top: 30%;
+            margin-bottom: 10px;
+            margin-bottom: 30px;
+
+            p {
+                color: var(--t2color)
+            }
+        }
+
+        .about-btn {
+            a {
+                text-decoration: none;
+                color: var(--tcolor);
+                background: var(--color-r);
+                padding: 10px 15px;
+                font-weight: 600;
+                text-transform: capitalize;
+
+            }
+
+            a:hover {
+                background: var(--color-o);
+                color: var(--t2color);
+            }
+        }
+
+        .skill {
+            padding: 20px;
+            margin-top: 50px;
+
+            .about-skill-title {
+                margin-bottom: 20px;
+
+                h4 {
+                    font-weight: 600;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: var(--t2color);
+                }
+
+            }
+
+            .progress {
+                margin-bottom: 50px;
+            }
+        }
+
+    }
+
+    .education,
+    .experience,
+    .service,
+    .portfolio {
+
+        .education-header,
+        .experience-header,
+        .service-header,
+        .portfolio-header,
+        .review-header,
+        .contact-header {
+            margin-bottom: 30px;
+        }
+
+        padding: 30px;
+
+        .service-box {
+            padding: 20px;
+
+            .icon i {
+                font-size: 30px;
+                margin-bottom: 20px;
+                color: var(--color-o);
+            }
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+                color: var(--tcolor);
+            }
+
+            p {
+                font-size: 16px;
+                color: var(--t2color);
+            }
+
+        }
+    }
+
+    .client-portfolio {
+        margin-top: 100px;
+        padding-bottom: 100px;
+
+        p {
+            color: var(--t2color);
+        }
+
+        .client-deatils {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .client-profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-right: 20px;
+                object-fit: cover;
+                object-position: top;
+                border-radius: 50%;
+                border: 5px solid var(--color-o);
+            }
+
+            .client-self {
+                h5 {
+                    font-size: 28px;
+                    font-weight: 600;
+                    color: var(--tcolor);
+                }
+
+                p {
+                    font-size: 16px;
+                    color: var(--t2color);
+                }
+            }
+        }
+    }
+
+}
