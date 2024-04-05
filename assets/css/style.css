@@ -10,9 +10,11 @@
     --color-r: #dc3545;
     --color-o: #fd7e14;
     --color-w: #fff;
+    --color-w2: #f0e0e0 ;
     --tcolor: rgb(34, 34, 34);
     --t2color: rgb(102, 102, 102);
     --bgcolor: #ffc107;
+    --bgcolor2:#ccf1b6;
 }
 
 h2 {
@@ -92,7 +94,7 @@ h2::after {
 
 /* header css */
 body {
-    background: var(--bgcolor);
+    background: var(--bgcolor2);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
